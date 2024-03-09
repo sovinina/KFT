@@ -68,5 +68,13 @@ for (let i =1;i<47;i++){
     container.insertBefore(page, back)
     page.appendChild(pageContent)
     pageContent.appendChild(pageImage)
-    pageImage.style.backgroundImage =`url(img/страницы/Сказки-${i}.png)`
+    switch (i){
+        case 3:
+        case 29:
+            pageImage.style.backgroundImage =`url(img/gif/Сказки-${i}.gif)`;
+            break;
+        default:
+            pageImage.style.backgroundImage =`url(img/страницы/Сказки-${i}.png)`;
+    }
+
 }
