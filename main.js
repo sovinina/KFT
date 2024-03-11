@@ -144,6 +144,7 @@ for (let i =1;i<47;i++){
         case 29:
         case 19:
         case 24:
+        case 30:
             pageImage.style.backgroundImage =`url(img/gif/Сказки-${i}.gif)`;
             break;
         default:
