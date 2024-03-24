@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const contents = document.querySelectorAll('li')
+    const contents = document.querySelector('.toc').querySelectorAll('li')
     const pageFlip = new St.PageFlip(
         document.getElementById("demoBookExample"),
         {
@@ -94,19 +94,11 @@ document.addEventListener('DOMContentLoaded', function() {
     })*/
     // load pages
     pageFlip.loadFromHTML(document.querySelectorAll(".page"));
-
-    /*document.querySelector(".page-total").innerText = pageFlip.getPageCount();
-    document.querySelector(
-        ".page-orientation"
-    ).innerText = pageFlip.getOrientation();*/
-
-    /*document.querySelector(".btn-prev").addEventListener("click", () => {
-        pageFlip.flipPrev(); // Turn to the previous page (with animation)
-    });
-
-    document.querySelector(".btn-next").addEventListener("click", () => {
-        pageFlip.flipNext(); // Turn to the next page (with animation)
-    });*/
+    
+    if(localStorage.getItem('page')){
+        let page = parseInt(localStorage.getItem('page'))
+        pageFlip.flip(page, 'top')
+    }
 
     // triggered by page turning
     pageFlip.on("flip", (e) => {
@@ -114,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let n = Math.floor(Math.random() * (13 - 1) + 1)
         let audio = new Audio(`audio/${n}.mp3`)
         audio.play()
+        localStorage.setItem('page', e.data)
     });
 
     // triggered when the state of the book changes
@@ -145,6 +138,7 @@ for (let i =1;i<47;i++){
         case 19:
         case 24:
         case 30:
+        case 33:
             pageImage.style.backgroundImage =`url(img/gif/Сказки-${i}.gif)`;
             break;
         default:
