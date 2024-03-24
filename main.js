@@ -26,63 +26,66 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.toc').classList.add('none')
             switch (index){
                 case 0:
-                    pageFlip.flip(5, 'top')
+                    pageFlip.flip(3, 'top')
                     break;
                 case 1:
-                    pageFlip.flip(8, 'top')
+                    pageFlip.flip(5, 'top')
                     break;
                 case 2:
-                    pageFlip.flip(10, 'top')
+                    pageFlip.flip(8, 'top')
                     break;
                 case 3:
-                    pageFlip.flip(11, 'top')
+                    pageFlip.flip(10, 'top')
                     break;
                 case 4:
-                    pageFlip.flip(13, 'top')
+                    pageFlip.flip(11, 'top')
                     break;
                 case 5:
-                    pageFlip.flip(17, 'top')
+                    pageFlip.flip(13, 'top')
                     break;
                 case 6:
-                    pageFlip.flip(18, 'top')
+                    pageFlip.flip(17, 'top')
                     break;
                 case 7:
-                    pageFlip.flip(21, 'top')
+                    pageFlip.flip(18, 'top')
                     break;
                 case 8:
-                    pageFlip.flip(22, 'top')
+                    pageFlip.flip(21, 'top')
                     break;
                 case 9:
-                    pageFlip.flip(26, 'top')
+                    pageFlip.flip(22, 'top')
                     break;
                 case 10:
-                    pageFlip.flip(30, 'top')
+                    pageFlip.flip(26, 'top')
                     break;
                 case 11:
-                    pageFlip.flip(31, 'top')
+                    pageFlip.flip(30, 'top')
                     break;
                 case 12:
-                    pageFlip.flip(32, 'top')
+                    pageFlip.flip(31, 'top')
                     break;
                 case 13:
-                    pageFlip.flip(35, 'top')
+                    pageFlip.flip(32, 'top')
                     break;
                 case 14:
-                    pageFlip.flip(38, 'top')
+                    pageFlip.flip(35, 'top')
                     break;
                 case 15:
-                    pageFlip.flip(39, 'top')
+                    pageFlip.flip(38, 'top')
                     break;
                 case 16:
-                    pageFlip.flip(40, 'top')
+                    pageFlip.flip(39, 'top')
                     break;
                 case 17:
-                    pageFlip.flip(41, 'top')
+                    pageFlip.flip(40, 'top')
                     break;
                 case 18:
-                    pageFlip.flip(42, 'top')
+                    pageFlip.flip(41, 'top')
                     break;
                 case 19:
+                    pageFlip.flip(42, 'top')
+                    break;
+                case 20:
                     pageFlip.flip(44, 'top')
                     break;
             }
